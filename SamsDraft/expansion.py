@@ -61,6 +61,6 @@ plt.figtext(0.88, 0.12, r"$\Omega_\Lambda=%0.2f$" % omega_lambda, ha='right', va
 ax.set_xlabel("$t - t_0$ (Gyr)", fontsize=16)
 ax.set_ylabel("$a$", fontsize=16)
 fig.savefig("plots/expansion.png", bbox_inches="tight", transparent=True)
-# plt.show()  # Show the plot interactively if you want
+plt.show()  # Show the plot interactively if you want
 # For reports, save a pdf plot. For quick viewing, save a png
 # fig.savefig("plots/expansion.pdf", bbox_inches="tight", transparent=True)
