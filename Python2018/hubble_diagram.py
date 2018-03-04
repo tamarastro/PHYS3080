@@ -1,5 +1,7 @@
 import numpy as np
 from scipy.integrate import quad
+import matplotlib
+matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 
 
@@ -28,7 +30,7 @@ def dist_mod(zs, om, ol):
     
 # Import data
 #data = np.loadtxt("jla_lcparams_simple.txt", comments='#', usecols=(1,2,3,4))
-data = np.genfromtxt("jla_lcparams_simple_new.txt",names=True,comments='#',dtype=None,skip_header=14)
+data = np.genfromtxt("data/jla_lcparams_simple_new.txt",names=True,comments='#',dtype=None,skip_header=11)
 zz = data['zcmb']
 mu = data['mb']
 mu_error = data['dmb'] 
@@ -57,6 +59,6 @@ plt.legend(loc='lower right',frameon=False)
 plt.xlim(0,1.4)
 plt.xlabel('redshift')
 plt.ylabel('magnitude')
-plt.savefig("hubble_diagram.png")
+plt.savefig("plots/hubble_diagram.png")
 
 

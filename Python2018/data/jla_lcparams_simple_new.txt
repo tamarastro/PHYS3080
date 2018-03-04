@@ -3,9 +3,6 @@
 #
 #zcmb: CMB frame redshift (including peculiar velocity corrections for
 #      nearby supernova based on the models of M.J. Hudson)
-#zhel: Heliocentric redshift (note both zcmb and zhel are needed
-#      to compute the luminosity distance)
-#dz: redshift error (no longer used by the plugin)
 #mu: distance modulus
 #dmu: Error in distance modulus (includes contributions from intrinsic dispersion, 
 #     lensing, and redshift uncertainty)
